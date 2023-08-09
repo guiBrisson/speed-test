@@ -56,6 +56,7 @@ dependencies {
     // Android core
     implementation("androidx.core:core-ktx:1.10.1")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.1")
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.6.1")
     implementation("androidx.activity:activity-compose:1.7.2")
 
     // Compose
@@ -69,6 +70,9 @@ dependencies {
     implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
     implementation("com.google.dagger:hilt-android:2.45")
     kapt("com.google.dagger:hilt-compiler:2.45")
+
+    // OkHttp
+    implementation("com.squareup.okhttp3:okhttp:4.10.0")
 
     // Test dependencies
     testImplementation("junit:junit:4.13.2")
