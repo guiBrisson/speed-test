@@ -6,4 +6,6 @@ interface INetworkManager {
     fun isConnected(): StateFlow<Boolean>
     fun calculateSpeed(callback: (downSpeed: Int, upSpeed: Int) -> Unit)
     fun calculateLatency(): Double
+    suspend fun getPublicIpAddress(): String?
+    fun clear()
 }
